@@ -4,7 +4,7 @@ const app = express()
 app.use(express.static('src'))
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + '/src/mainPage.html')
+  response.sendFile(__dirname + 'mainPage.html')
 })
 
 const listener = app.listen(process.env.PORT, () => {
