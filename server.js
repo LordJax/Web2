@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.static('src'))
 
-app.get("/", (request, response) => {
+app.get("", (request, response) => {
   response.sendFile(__dirname + 'mainPage.html')
 })
 
